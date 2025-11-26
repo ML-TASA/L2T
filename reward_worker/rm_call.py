@@ -1,3 +1,6 @@
+# Copyright (c) 2025
+# Licensed under the MIT License.
+
 """
 This file is largely borrowed from OpenR (https://github.com/openreasoner/openr)
 """
