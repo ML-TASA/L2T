@@ -31,7 +31,9 @@ The full pipeline consists of **two stages**:
 1. Train/prepare the reward model (RM)
 2. Run L2T (policy training) with Verl
 
-All key parameters (model path, data path, batch size, GPUs, etc.) are configured inside the `.sh` scripts. Running:
+All key parameters (model path, data path, batch size, GPUs, etc.) are configured inside the `.sh` scripts. 
+
+We provide an example, running:
 
 ```bash
 bash run_rm.sh
@@ -39,11 +41,13 @@ bash run_rm.sh
 bash run_L2T.sh
 ```
 
+> **Note:** the default settings in our scripts (e.g., `max_num_batched_tokens`, `gpu_memory_utilization`, batch size, and rollout parallelism) are intentionally chosen to be **conservative and memory-friendly**, so that users with limited GPU resources can run the training pipeline without OOM issues. These values can be safely increased on larger-memory machines.
 
+Enjoy training and have fun exploring! 😄
 
 
 # Main Results
-![alt text](578ab38a-a78e-4030-94e4-d43c8124c170.png)
+![alt text](./578ab38a-a78e-4030-94e4-d43c8124c170.png)
 
 # Citation
 If you find our work and codes useful, please consider citing our paper and star our repository (🥰🎉Thanks!!!):
