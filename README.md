@@ -6,6 +6,13 @@
 
 This repository contains the pytorch code for the 2025 NeurIPS paper "[Learning to Think: Information-Theoretic Reinforcement Fine-Tuning for LLMs](https://wangjingyao07.github.io/L2T.github.io/)"
 
+### 🚀 Live Demo Website
+
+🥇[NeurIPS 2025] Learning to Think: Information-Theoretic Reinforcement Fine-Tuning for LLMs
+
+👉 **[Click here to view the project online](https://wangjingyao07.github.io/L2T.github.io/)**
+
+
 # Introduction
 Large language models (LLMs) excel at complex tasks thanks to advances in their reasoning abilities. However, existing methods overlook the trade-off between reasoning effectiveness and efficiency, often encouraging unnecessarily long reasoning chains and wasting tokens. To address this, we propose Learning to Think (L2T), an information-theoretic reinforcement fine-tuning framework for LLMs to make the models achieve optimal reasoning with fewer tokens. Specifically, L2T treats each query-response interaction as a hierarchical session of multiple episodes and proposes a universal dense process reward, i.e., quantifies the episode-wise information gain in parameters, requiring no extra annotations or task-specific evaluators. We propose a method to quickly estimate this reward based on PAC-Bayes bounds and the Fisher information matrix. Theoretical analyses show that it significantly reduces computational complexity with high estimation accuracy. By immediately rewarding each episode's contribution and penalizing excessive updates, L2T optimizes the model via reinforcement learning to maximize the use of each episode and achieve effective updates. Empirical results on various reasoning benchmarks and base models demonstrate the advantage of L2T across different tasks, boosting both reasoning effectiveness and efficiency.
 
