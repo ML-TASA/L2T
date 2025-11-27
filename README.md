@@ -22,6 +22,12 @@ The data format and directory layout follow Verl’s conventions. In our scripts
 /root/data/gsm8k/test.parquet
 ```
 
+An example of data preprocess of l2t:
+
+```shell
+python examples/data_preprocess/gsm8k_l2t.py
+```
+
 You can modify these paths directly in `run_rm.sh` and `run_L2T.sh` to point to your own datasets.
 
 

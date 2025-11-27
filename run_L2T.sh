@@ -1,7 +1,7 @@
 # Tested successfully on the hiyouga/verl:ngc-th2.6.0-cu126-vllm0.8.4-flashinfer0.2.2-cxx11abi0 image.
 # It outperforms the Qwen2 7B base model by two percentage points on the test set of GSM8K.
 set -x
-export CUDA_VISIBLE_DEVICES=2,3,4,5,6,7
+
 python3 -m verl.trainer.main_ppo \
     algorithm.adv_estimator=grpo \
     data.train_files=/root/data/gsm8k/train.parquet \

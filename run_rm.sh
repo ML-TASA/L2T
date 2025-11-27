@@ -33,7 +33,7 @@ tmux send-keys "source ~/.bashrc && conda activate tts && cd ${PYTHONPATH}" Ente
 if [[ "$VALUE_MODEL_PATH" =~ "dummy" ]]; then
     command="pwd"
 else
-    command="CUDA_VISIBLE_DEVICES=7 ${PYTHON_EXECUTABLE} -m reward_worker.reward_model_worker \
+    command="CUDA_VISIBLE_DEVICES=$CUDA_VISIBLE_DEVICES ${PYTHON_EXECUTABLE} -m reward_worker.reward_model_worker \
         --model-path $VALUE_MODEL_PATH \
         --controller-address http://$HOST_ADDR:$CONTROLLER_PORT \
         --host $HOST_ADDR \
